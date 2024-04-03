@@ -37,30 +37,47 @@ class _AnaEkranState extends State<AnaEkran> {
         title: Text("Mobil Hafta 6"),
       ),
       body: Center(
-          child:
-              //--------------
-              //--------------
-              //--------------Kodları aşağıya yazınız.
-              //--------------
-              Column()
-          //--------------
-          //--------------
-          //--------------
-          //--------------
-          //--------------Kodları yukarıya yazınız.
-          //--------------
-          //--------------
-          //--------------
-          //--------------
-          //--------------
-          //--------------
-          //--------------
-          //--------------
-          //--------------
-          //--------------
-          //--------------
-          //--------------
-          ),
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Container(
+            height: 200,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.grey,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.white,
+                  child: Icon(Icons.chat),
+                ),
+                SizedBox(
+                  height: 50,
+                  width: 50,
+                ),
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.yellow,
+                  child: Icon(Icons.groups),
+                ),
+                SizedBox(
+                  height: 50,
+                  width: 50,
+                ),
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.blue,
+                  child: Icon(Icons.call),
+                )
+              ],
+            ),
+          )
+        ],
+      )),
     );
   }
 }
